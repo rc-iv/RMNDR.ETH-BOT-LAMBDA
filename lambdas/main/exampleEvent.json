@@ -1,0 +1,54 @@
+{
+  "pk": {
+    "S": "e51f04db-e59d-4e2b-9214-a91677149e80"
+  },
+  "sk": {
+    "S": "895001110794866708"
+  },
+  "chain": {
+    "S": "BTC"
+  },
+  "channelId": {
+    "S": "895001110794866711"
+  },
+  "channelName": {
+    "S": "general"
+  },
+  "description": {
+    "S": "BTC whales scam. Prob not good but I won AL so I'm making an event. https://twitter.com/Ordinal_News/status/1744096362105376859"
+  },
+  "eventDate": {
+    "S": "01-12-2024"
+  },
+  "eventDateTime": {
+    "S": "2024-01-12T22:30:00Z"
+  },
+  "eventName": {
+    "S": "BTC Whales Culture Pods"
+  },
+  "eventTime": {
+    "S": "17:30"
+  },
+  "eventTimeZone": {
+    "S": "America/New_York"
+  },
+  "eventType": {
+    "S": "Mint"
+  },
+  "subscribedUsers": {
+    "L": [
+      {
+        "S": "317105417748480002"
+      },
+      {
+        "S": "719813513962455110"
+      }
+    ]
+  },
+  "userId": {
+    "S": "317105417748480002"
+  },
+  "userName": {
+    "S": "rciv"
+  }
+}
