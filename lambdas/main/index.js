@@ -12,6 +12,7 @@ const {
 exports.handler = async (event) => {
   const PUBLIC_KEY = process.env.PUBLIC_KEY;
   const strBody = event.body;
+  console.log(`Event body: ${strBody}`);
   const eventData = JSON.parse(strBody);
 
   if (eventData.type == 1) {
@@ -92,5 +93,16 @@ exports.handler = async (event) => {
         break;
     }
   }
-  return JSON.stringify(response);
+
+  const corsResponse = {
+    ...response,
+    headers: {
+      ...response.headers,
+      "Access-Control-Allow-Origin": "https://www.rmndrbot.com", 
+      "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
+      "Access-Control-Allow-Headers": "Content-Type",
+    },
+  };
+
+  return JSON.stringify(corsResponse);
 };
